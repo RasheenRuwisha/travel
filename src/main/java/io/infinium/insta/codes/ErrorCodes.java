@@ -7,6 +7,7 @@ public class ErrorCodes {
     public static int REGISTRATION_ERROR_USERNAME_EXISTS = 3002;
     public static int LOGIN_FALIURE_PASSWORD = 3003;
     public static int LOGIN_FALIURE = 3004;
+    public static int FOLLOWING_FALIURE = 3005;
 
 
 }

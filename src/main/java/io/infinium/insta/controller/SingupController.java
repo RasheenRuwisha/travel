@@ -11,6 +11,7 @@ import io.infinium.insta.repository.UserRepository;
 import io.infinium.insta.util.PasswordEncrypter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -37,7 +38,7 @@ public class SingupController {
     PasswordEncrypter passwordUtil;
 
 
-    @RequestMapping(value = "/register")
+    @PostMapping(value = "/register")
     @ResponseBody
     public int registerAccount(@RequestBody UserContext user){
         String uuid = UUID.randomUUID().toString();
